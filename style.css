@@ -200,9 +200,9 @@ h1, h2, h3 {
 
 .letter > img {
 
-  width: 100%;       /* Chiều rộng ảnh */
+  width: 90%;       /* Chiều rộng ảnh */
 
-  height: 100%;       /* Chiều cao ảnh */
+  height: 90%;       /* Chiều cao ảnh */
 
   object-fit:cover;
 
@@ -211,7 +211,7 @@ h1, h2, h3 {
 
 
   object-position: center 20%;
-
+ 
    display: block;
 
   margin: 0 auto;

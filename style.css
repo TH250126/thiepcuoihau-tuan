@@ -1110,3 +1110,361 @@ h1, h2, h3 {
 .gallery-item:nth-child(7) img {
   object-position: left center;
 }
+
+
+/* =========================================
+   RESPONSIVE WEBSITE THIỆP CƯỚI H&T
+   TỐI ƯU ĐIỆN THOẠI + TABLET
+   KHÔNG THAY ĐỔI GIAO DIỆN DESKTOP
+========================================= */
+
+/* Ảnh không vượt quá chiều rộng màn hình */
+@media (max-width: 768px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .invitation {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* ===== PHONG BÌ ===== */
+
+  .envelope-screen {
+    padding: 20px 16px;
+    min-height: 100vh;
+    min-height: 100svh;
+    justify-content: center;
+  }
+
+  .envelope-heading {
+    font-size: clamp(17px, 5vw, 25px);
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .khachmoi {
+    font-size: clamp(20px, 6vw, 27px);
+    margin: 18px 0 25px;
+    text-align: center;
+  }
+
+  .envelope {
+    width: min(88vw, 390px);
+    height: auto;
+    aspect-ratio: 1.59 / 1;
+  }
+
+  .wax-seal {
+    width: 60px;
+    height: 60px;
+  }
+
+  .open-hint {
+    max-width: 90%;
+    margin-top: 30px;
+    font-size: 10px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  /* Lá thư khi trượt lên */
+  .envelope.letter-up .letter {
+    transform: translateY(-110px);
+  }
+
+  /* ===== TRANG CHÍNH ===== */
+
+  .hero {
+    padding: 55px 18px 45px;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+  }
+
+  .hero h1 {
+    font-size: clamp(39px, 11vw, 60px);
+    margin: 15px 0 22px;
+  }
+
+  .hero-photo {
+    width: 100%;
+    max-width: 430px;
+    height: clamp(300px, 115vw, 420px);
+    border-width: 6px;
+  }
+
+  .invitationtext {
+    width: 100%;
+    padding: 0 5px;
+    margin-top: 35px;
+    font-size: 13px;
+    line-height: 1.9;
+    overflow-wrap: break-word;
+  }
+
+  /* ===== CÁC SECTION ===== */
+
+  .section {
+    padding: 48px 17px;
+  }
+
+  .section h2 {
+    font-size: clamp(23px, 6vw, 29px);
+    line-height: 1.4;
+    margin-bottom: 24px;
+  }
+
+  .section p {
+    line-height: 1.7;
+  }
+
+  /* ===== ĐẾM NGƯỢC ===== */
+
+  .countdown {
+    width: 100%;
+    gap: 7px;
+    justify-content: center;
+  }
+
+  .countdown div {
+    flex: 1;
+    min-width: 0;
+    max-width: 76px;
+    padding: 12px 3px;
+  }
+
+  .countdown strong {
+    font-size: clamp(21px, 6vw, 27px);
+  }
+
+  .countdown span {
+    font-size: 9px;
+  }
+
+  /* ===== GIA ĐÌNH ===== */
+
+  .family-grid {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .family-grid h3 {
+    font-size: 21px;
+  }
+
+  .family-grid p {
+    font-size: 12px;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+  }
+
+  /* ===== NGÀY CƯỚI ===== */
+
+  .date-card {
+    width: min(100%, 240px);
+    padding: 20px;
+  }
+
+  .date-card strong {
+    font-size: 68px;
+  }
+
+  .venue {
+    font-size: 27px;
+    line-height: 1.4;
+  }
+
+  .wedding-section h3 {
+    font-size: 21px;
+    line-height: 1.5;
+  }
+
+  .gold-button {
+    min-height: 46px;
+    padding: 14px 22px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ===== ALBUM ẢNH ===== */
+
+  .gallery-section {
+    width: 100%;
+    max-width: 560px;
+    margin: 35px auto;
+    padding: 25px 14px;
+  }
+
+  .gallery-heading {
+    margin-bottom: 30px;
+  }
+
+  .gallery-heading h2 {
+    font-size: clamp(27px, 8vw, 33px);
+  }
+
+  .gallery-subtitle {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .gallery-list {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .gallery-item {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  .gallery-item img,
+  .gallery-list .gallery-item:nth-child(5) img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+  }
+
+  .gallery-quote {
+    padding: 12px 0 18px;
+  }
+
+  .gallery-quote p {
+    font-size: 21px;
+    line-height: 1.5;
+  }
+
+  .gallery-quote small {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .gallery-ending {
+    margin-top: 35px;
+  }
+
+  .gallery-ending p {
+    font-size: 21px;
+    line-height: 1.5;
+  }
+
+  /* ===== FORM RSVP ===== */
+
+  .rsvp-section form {
+    width: 100%;
+    max-width: 450px;
+    gap: 12px;
+  }
+
+  .rsvp-section input,
+  .rsvp-section select,
+  .rsvp-section textarea {
+    width: 100%;
+    min-height: 48px;
+    padding: 13px;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+
+  .rsvp-section textarea {
+    min-height: 110px;
+  }
+
+  .rsvp-section button {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  /* ===== CHÂN TRANG ===== */
+
+  .footer {
+    padding: 45px 15px;
+    font-size: 10px;
+  }
+
+  .footer h2 {
+    font-size: 32px;
+  }
+
+  /* ===== NÚT NHẠC VÀ TỰ ĐỘNG CUỘN ===== */
+
+  .music-toggle {
+    width: 45px;
+    height: 45px;
+    right: 14px;
+    bottom: 14px;
+  }
+
+  .auto-scroll-toggle {
+    right: 12px;
+    bottom: 70px;
+    padding: 9px 12px;
+    font-size: 9px;
+  }
+}
+
+/* =========================================
+   ĐIỆN THOẠI NHỎ: DƯỚI 380PX
+========================================= */
+
+@media (max-width: 380px) {
+
+  .envelope {
+    width: 90vw;
+  }
+
+  .envelope-heading {
+    font-size: 17px;
+    letter-spacing: 2px;
+  }
+
+  .khachmoi {
+    font-size: 21px;
+  }
+
+  .family-grid {
+    gap: 7px;
+  }
+
+  .family-grid p {
+    font-size: 11px;
+  }
+
+  .countdown {
+    gap: 5px;
+  }
+
+  .countdown div {
+    padding: 10px 2px;
+  }
+
+  .countdown strong {
+    font-size: 21px;
+  }
+
+  .section {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+}

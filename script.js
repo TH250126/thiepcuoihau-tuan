@@ -483,7 +483,7 @@ function startPetals() {
   }
 
   // Tiếp tục tạo trái tim rơi
-  petalTimer = setInterval(createHeart, 1000);
+  petalTimer = setInterval(createHeart, 1500);
 }
 
 

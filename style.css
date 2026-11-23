@@ -560,9 +560,9 @@ h1, h2, h3 {
 
 .invitationtext {
 
-  max-width: 580px;
+  max-width: 456px;
 
-  padding: 0 0px;
+  padding: 0 24px;
 
   margin: 60px auto 0;
 

@@ -1,5 +1,20 @@
 
+// =====================================
+// CÁ NHÂN HÓA TÊN KHÁCH MỜI
+// =====================================
 
+const urlParams = new URLSearchParams(
+  window.location.search
+);
+
+const guestName = urlParams.get("to");
+
+const guestNameElement =
+  document.getElementById("guestName");
+
+if (guestName && guestNameElement) {
+  guestNameElement.textContent = guestName;
+}
 
 
 /* =================================

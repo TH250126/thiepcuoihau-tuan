@@ -12,8 +12,7 @@ const guestNameElement =
   document.getElementById("guestName");
 
 if (guestName && guestNameElement) {
-  guestNameElement.textContent =
-    "Trân trọng kính mời " + guestName;
+  guestNameElement.textContent = guestName;
 }
 
 /* =================================

@@ -2620,7 +2620,7 @@ body {
 
     /* ĐIỀU CHỈNH VỊ TRÍ */
   position: relative;
-  left: -60px;
+  left: 0px;
   top: 0px;
 }
 
@@ -2635,7 +2635,7 @@ body {
 /* TÊN CHÚ RỂ */
 .groom-name {
   position: relative;
-  left: -50px;  /* Dịch trái/phải */
+  left: -20px;  /* Dịch trái/phải */
   top: 0px;   /* Dịch lên/xuống */
 
   color: var(--wine);
@@ -2657,7 +2657,7 @@ body {
 /* TÊN CÔ DÂU */
 .bride-name {
   position: relative;
-  left: 120px;
+  left: 80px;
   top: 0px;
 
   color: var(--wine);
@@ -2697,7 +2697,7 @@ body {
 /* TÊN CHÚ RỂ */
 .groom-name {
   font-family: 'Great Vibes', cursive;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 400;
   color: #8B1E2D;
   line-height: 1.2;
@@ -2707,7 +2707,7 @@ body {
 /* DẤU & */
 .couple-symbol {
   font-family: 'Great Vibes', cursive;
-  font-size: 48px;
+  font-size: 30px;
   font-weight: 400;
   color: #C49A55;
   line-height: 1;
@@ -2717,7 +2717,7 @@ body {
 /* TÊN CÔ DÂU */
 .bride-name {
   font-family: 'Great Vibes', cursive;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 400;
   color: #8B1E2D;
   line-height: 1.2;
